@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Box-Shadow-Generator</title>
+</head>
+<body>
+    <h1 style="text-align: center;">BOX-SHADOW GENERATOR</h1>
+    <div class="main-container">
+        <div class="box-container">
+            
+            <div class="box">
+            
+            </div>
+        </div>
+        <div class="sec-container">
+            <div class="inputs">
+                <div class="sliders">
+                    <label>x-Axis</label>
+                    <input type="range" min="-50" max="50" value="0" id="x" oninput="start()">
+                    <label>y-Axis</label>
+                    <input type="range" min="-50" max="50" value="0" id="y" oninput="start()">
+                    <label>Blur</label>
+                    <input type="range" min="0" max="100" value="0" id="blur" oninput="start()">
+                </div>
+                <div class="color-box">
+                    <label for="">Colour</label>
+                    <input type="color" value="000" id="color" oninput="start()">
+                </div>
+            </div>
+            <div class="shade"><div class="shadow-text">box-shadow:0 0 0 #000;</div></div>
+            
+            <br><br><br>
+            <a href="#" onclick="copy()"><i class="far fa-copy"></i></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
